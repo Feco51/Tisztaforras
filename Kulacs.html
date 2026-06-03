@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="Water Bottle.png">
+<link rel="stylesheet" href="style.css">
+<title>Tisztaforrás Termék</title>
+    <header>
+      <nav>
+<ul class="nav-menu" id="nav-menu">
+    <li><a href="index.html">Főoldal</a></li>
+
+    <!-- MEGA DROPDOWN -->
+    <li class="dropdown">
+      <a href="termek.html">Termékek</a>
+
+      <div class="mega-dropdown">
+        <div class="column">
+          <h3>Ásvány vizeink</h3>
+          <ul>
+            <li><a href="Szénsavmentes.html">Szénsavmentes</a></li>
+            <li><a href="Szénsavmentes.html">Szénsavas</a></li>
+            <li><a href="404_page.html">Lúgos</a></li>
+            <li><a href="404_page.html">Ízesített</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Edzés felszerelés</h3>
+          <ul>
+            <li><a href="Kulacs.html">Kulacs</a></li>
+            <li><a href="404_page.html">Póló</a></li>
+            <li><a href="404_page.html">Nadrág</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Szezonális</h3>
+          <ul>
+            <li><a href="404_page.html">Mangós víz</a></li>
+            <li><a href="404_page.html">Maracuja víz</a></li>
+            <li><a href="404_page.html">Rövidnadrág</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="Kapcsolataink.html">Kapcsolataink</a></li>
+
+    <!-- FIÓK -->
+    <li class="dropdown right">
+      <button class="dropbtn">Fiók</button>
+      <div class="dropdown-content">
+        <a href="Bejelentkezes.html">Bejelentkezés</a>
+        <a href="Regisztracio.html">Regisztráció</a>
+        <a href="Fiok.html">Fiók állapota</a>
+      </div>
+    </li>
+  </ul>
+    <!-- LOGÓ -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+</nav>
+      </nav>
+    </header>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#00c6ff,#0072ff);
+    color: white;
+    margin-top: 50px;
+}
+/* MAIN */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px;
+display:grid;
+grid-template-columns:120px 1fr 400px;
+gap:30px;
+}
+
+/* THUMBNAILS */
+
+.thumbs img{
+width:90px;
+margin-bottom:12px;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.thumbs img:hover{
+transform:scale(1.05);
+box-shadow:0 0 10px #00c3ff;
+}
+
+/* MAIN IMAGE */
+
+.main-image img{
+width:70%;
+border-radius:12px;
+transition:0.4s;
+}
+
+.main-image img:hover{
+transform:scale(1.03);
+}
+
+/* PRODUCT */
+
+.product h1{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:34px;
+color:#f64545;
+font-weight:bold;
+margin:15px 0;
+text-shadow:0 0 10px #ff0000;
+}
+
+.rating{
+color:gold;
+margin-bottom:15px;
+}
+
+/* BUY BOX */
+
+.buy-box{
+background:#0f1724;
+padding:25px;
+border-radius:14px;
+box-shadow:0 0 25px rgba(0,195,255,0.2);
+animation:float 4s infinite ease-in-out;
+}
+
+/* QUANTITY */
+
+.quantity{
+display:flex;
+gap:10px;
+align-items:center;
+margin-bottom:20px;
+}
+
+.quantity button{
+width:35px;
+height:35px;
+border:none;
+background:#111c2e;
+color:white;
+cursor:pointer;
+border-radius:6px;
+font-size:18px;
+transition:0.2s;
+}
+
+.quantity button:hover{
+background:#00c3ff;
+}
+
+/* BUTTONS */
+
+.btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:8px;
+margin-top:10px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.buy{
+background:#00c3ff;
+color:white;
+font-weight:bold;
+}
+
+.buy:hover{
+transform:scale(1.03);
+box-shadow:0 0 15px #00c3ff;
+}
+
+.cart{
+background:#1b2a40;
+color:white;
+}
+
+.cart:hover{
+background:#00c3ff;
+color:white;
+}
+
+.fav{
+background:#111c2e;
+color:white;
+}
+
+.fav:hover{
+background:#ff3c5a;
+}
+
+/* SHIPPING */
+
+.shipping{
+margin-top:20px;
+font-size:14px;
+color: white;
+}
+.flavors{
+margin:20px 0;
+}
+
+.flavor-options{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+#flavorText {
+  font-weight: 1000;
+}
+
+.flavor{
+padding:10px 16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+font-weight: 1000;
+border:2px solid transparent;
+}
+
+.flavor:hover{
+transform:scale(1.08);
+box-shadow:0 0 10px #00c3ff;
+}
+
+.mango{background:#3a4aff;color:black}
+.kiwi{background:#e42d2d}
+.lemon{background:#ff1ece;color:black}
+.strawberry{background:#000000; color:white}
+
+.selected {
+margin-top:10px;
+color:white
+}
+
+/* RELATED */
+
+.related{
+max-width:1200px;
+margin:auto;
+padding:40px;
+}
+
+.related h2{
+margin-bottom:20px;
+}
+
+.items{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+
+.card{
+background:#0f1724;
+border-radius:12px;
+padding:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 15px #00c3ff;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.card p{
+margin:10px 0;
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.thumbs{
+display:flex;
+}
+
+.items{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+footer{
+  text-align:center;
+  padding:40px;
+  background:black;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="thumbs">
+<img src="kulacs1.png" onclick="changeImg(this)">
+<img src="kulacs.png" onclick="changeImg(this)">
+
+</div>
+
+<div class="main-image">
+<img id="mainImg" src="kulacs.png">
+</div>
+
+<div class="product">
+
+<h1>Kulacs</h1>
+
+<div class="rating">⭐⭐⭐⭐⭐ (6767 értékelés)</div>
+
+<div class="price">990 Ft</div>
+<div class="flavors">
+
+<h3>Szín választása</h3>
+
+<div class="flavor-options">
+
+<div class="flavor mango" onclick="selectFlavor('Kék')">
+Kék
+</div>
+
+<div class="flavor kiwi" onclick="selectFlavor('Piros')">
+Piros
+</div>
+
+<div class="flavor lemon" onclick="selectFlavor('Rózsaszín')">
+Rózsaszín
+</div>
+
+<div class="flavor strawberry" onclick="selectFlavor('Fekete')">
+Fekete
+</div>
+
+</div>
+
+<p class="selected">Választott szín: <span id="flavorText">Nincs kiválasztva</span></p>
+
+</div>  
+
+<p>
+A Tiszta Forrás szénsavmentes ásványvize a természetes tisztaság és frissesség megtestesítője. Forrásunkból származik, ahol a víz gazdag ásványi anyagokban és nyomelemekben, amelyek hozzájárulnak az egészséges életmódhoz. Ez a víz ideális választás mindennapi hidratáláshoz, sportoláshoz vagy akár főzéshez is. Élvezze a tiszta ízt és a természetes előnyöket minden kortyban!
+</p>
+
+<div class="buy-box">
+
+<div class="quantity">
+
+<button onclick="minus()">-</button>
+
+<span id="qty">1</span>
+
+<button onclick="plus()">+</button>
+
+</div>
+
+<button class="btn buy">⚡ Azonnali vásárlás</button>
+
+<button class="btn cart">🛒 Kosárba</button>
+
+<button class="btn fav">❤️ Kedvencek</button>
+
+<div class="shipping">
+
+📦 Ingyenes szállítás <br>
+🚚 Szállítás 2-4 nap <br>
+🔒 Biztonságos fizetés
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="related">
+
+<h2>Kapcsolódó termékek</h2>
+
+<div class="items">
+
+<div class="card">
+<a href=""><img src="kulacs.png"></a>
+<p>Sport kulacs</p>
+</div>
+
+<div class="card">
+<a href="Szénsavmentes.html"><img src="asvanyviz.png"></a>
+<p>Szénsavas ásványvíz</p>
+</div>
+
+<div class="card">
+<a href="Szénsavmentes.html"><img src="asvanyviz1.png"></a>
+<p>Lúgos ásványvíz</p>
+</div>
+
+<div class="card">
+<a href="404_page.html"><img src="HAMAROSAN.png"></a>
+<p>HAMAROSAN elérhető</p>
+</div>
+
+<div class="card">
+<a href="404_page.html"><img src="HAMAROSAN.png"></a>
+<p>HAMAROSAN elérhető</p>
+</div>
+
+</div>
+
+</div>
+<footer>
+    &copy; 2024 Tiszta Forrás. Minden jog fenntartva.
+</footer>
+<script>
+
+function changeImg(img){
+document.getElementById("mainImg").src = img.src
+}
+
+let q=1
+
+function plus(){
+q++
+document.getElementById("qty").innerText=q
+}
+
+function minus(){
+if(q>1){
+q--
+document.getElementById("qty").innerText=q
+}
+}
+function selectFlavor(name){
+document.getElementById("flavorText").innerText=name
+} 
+</script>
+
+</body>
+</html>

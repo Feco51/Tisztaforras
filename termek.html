@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tisztaforras.hu</title>
+    <title><img src="" alt=""></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="Water Bottle.png">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+    <body>
+ <header>
+ <nav>
+
+
+  <!-- NAV MENU -->
+  <ul class="nav-menu" id="nav-menu">
+    <li><a href="index.html">Főoldal</a></li>
+
+    <!-- MEGA DROPDOWN -->
+    <li class="dropdown">
+      <a href="termek.html">Termékek</a>
+
+      <div class="mega-dropdown">
+        <div class="column">
+          <h3>Ásvány vizeink</h3>
+          <ul>
+            <li><a href="Szénsavmentes.html">Szénsavmentes</a></li>
+            <li><a href="Szénsavmentes.html">Szénsavas</a></li>
+            <li><a href="404_page.html">Lúgos</a></li>
+            <li><a href="404_page.html">Ízesített</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Edzés felszerelés</h3>
+          <ul>
+            <li><a href="Kulacs.html">Kulacs</a></li>
+            <li><a href="404_page.html">Póló</a></li>
+            <li><a href="404_page.html">Nadrág</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Szezonális</h3>
+          <ul>
+            <li><a href="404_page.html">Mangós víz</a></li>
+            <li><a href="404_page.html">Maracuja víz</a></li>
+            <li><a href="404_page.html">Rövidnadrág</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="Kapcsolataink.html">Kapcsolataink</a></li>
+
+    <!-- FIÓK -->
+    <li class="dropdown right">
+      <button class="dropbtn">Fiók</button>
+      <div class="dropdown-content">
+        <a href="Bejelentkezes.html">Bejelentkezés</a>
+        <a href="Regisztracio.html">Regisztráció</a>
+        <a href="Fiok.html">Fiók állapota</a>
+      </div>
+    </li>
+  </ul>
+    <!-- LOGÓ -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+</nav>
+
+<section class="products-section">
+    <h1>Összes termékünk</h1>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="asvanyviz.png" alt="Szénsavmentes ásványvíz">
+
+            <h3>Szénsavmentes ásványvíz</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+            </div>
+
+            <div class="price">50 Ft/db</div>
+
+            <button class="buy-btn"
+onclick="window.location.href='Szénsavmentes.html'">
+🛒 Vásárlás
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="kulacs.png" alt="Szénsavas ásványvíz">
+
+            <h3>Fitness kulacs</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆ <span>(4.7)</span>
+            </div>
+
+            <div class="price">999 Ft</div>
+
+                        <button class="buy-btn"
+onclick="window.location.href='Kulacs.html'">
+🛒 Vásárlás
+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="kulacs1.png" alt="Sport kulacs">
+
+            <h3>Kulacs</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>(5.0)</span>
+            </div>
+
+            <div class="price">699 Ft</div>
+
+                        <button class="buy-btn"
+    onclick="window.location.href='Kulacs.html'">
+    🛒 Vásárlás
+</button>
+        </div>
+        <div class="product-card">
+            <img src="HAMAROSAN.png" alt="Szénsavmentes ásványvíz">
+
+            <h3>HAMAROSAN!</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>(0)</span>
+            </div>
+
+            <div class="price">NÉZZ VISSZA KÉSŐBB!</div>
+
+            <button class="buy-btn"
+onclick="window.location.href='404_page.html'">
+🛒 Vásárlás
+</button>
+        </div>
+        
+
+        
+
+    </div>
+</section>
+<footer>
+  © 2026 Tiszta Forrás | A tiszta döntés
+</footer>
+<style>
+    .products-section{
+    padding:50px;
+    background:#1290ff;
+    min-height:100vh;
+}
+
+.products-section h1{
+    color:white;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#071428;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.product-card h3{
+    color:white;
+    margin:15px 0;
+}
+
+.rating{
+    color:#ffd700;
+    margin-bottom:10px;
+}
+
+.rating span{
+    color:#ccc;
+}
+
+.price{
+    color:#00ff9d;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.buy-btn{
+    width:100%;
+    border:none;
+    border-radius:12px;
+    padding:14px;
+    background:#1c4cff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    background:#335fff;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  background:black;
+  color: white;
+}
+</style>
+</body>

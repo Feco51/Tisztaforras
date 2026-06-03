@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tisztaforras.hu</title>
+    <title><img src="" alt=""></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="Water Bottle.png">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+ <header>
+ <nav>
+
+
+  <!-- NAV MENU -->
+  <ul class="nav-menu" id="nav-menu">
+    <li><a href="index.html">Főoldal</a></li>
+
+    <!-- MEGA DROPDOWN -->
+    <li class="dropdown">
+      <a href="termek.html">Termékek</a>
+
+      <div class="mega-dropdown">
+        <div class="column">
+          <h3>Ásvány vizeink</h3>
+          <ul>
+            <li><a href="Szénsavmentes.html">Szénsavmentes</a></li>
+            <li><a href="Szénsavmentes.html">Szénsavas</a></li>
+            <li><a href="404_page.html">Lúgos</a></li>
+            <li><a href="404_page.html">Ízesített</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Edzés felszerelés</h3>
+          <ul>
+            <li><a href="Kulacs.html">Kulacs</a></li>
+            <li><a href="404_page.html">Póló</a></li>
+            <li><a href="404_page.html">Nadrág</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Szezonális</h3>
+          <ul>
+            <li><a href="404_page.html">Mangós víz</a></li>
+            <li><a href="404_page.html">Maracuja víz</a></li>
+            <li><a href="404_page.html">Rövidnadrág</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="Kapcsolataink.html">Kapcsolataink</a></li>
+
+    <!-- FIÓK -->
+    <li class="dropdown right">
+      <button class="dropbtn">Fiók</button>
+      <div class="dropdown-content">
+        <a href="Bejelentkezes.html">Bejelentkezés</a>
+        <a href="Regisztracio.html">Regisztráció</a>
+        <a href="Fiok.html">Fiók állapota</a>
+      </div>
+    </li>
+  </ul>
+    <!-- LOGÓ -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+</nav>
+</header>
+    <header class="hero">
+  <div class="hero-content">
+    <h1>ÉREZD A TISZTASÁG EREJÉT</h1>
+    <p>Minden kortyban természet. Minden pillanatban frissesség.</p>
+    <button onclick="window.location.href='termek.html';"><font color="white">Fedezd fel</font></button>
+  </div>
+</header>
+
+<section class="section">
+  <h2>💧 Miért minket válassz?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🌿 Természetes Forrás</h3>
+      <p>Érintetlen mélységből származó ásványvíz.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Energia</h3>
+      <p>Tökéletes hidratálás minden helyzetben.</p>
+    </div>
+    <div class="card">
+      <h3>🌊 Prémium Minőség</h3>
+      <p>Modern palack, fenntartható gyártás.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Tiszta Forrás | A tiszta döntés
+</footer>
+      
+  </body>
+</html>
+    <style>
+      body {
+        color: white;
+      }
+        
+/* ================= HERO ================= */
+
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(-45deg,#00c6ff,#0072ff,#00eaff,#004e92);
+  background-size:400% 400%;
+  animation:gradientMove 12s ease infinite;
+  padding:20px;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.hero-content{
+  z-index: 20;
+  backdrop-filter:blur(20px);
+  background:rgba(255,255,255,0.1);
+  padding:60px;
+  border-radius:30px;
+  box-shadow:0 0 40px rgba(0,255,255,0.3);
+  animation:fadeIn 1.5s ease forwards;
+  z-index: 1;
+}
+
+.hero-content h1{
+  font-size:clamp(30px,6vw,70px);
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:clamp(16px,2vw,22px);
+  margin-bottom:30px;
+}
+
+.hero-content button{
+  padding:15px 40px;
+  border:none;
+  border-radius:40px;
+  background:#0f37ed;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.4s;
+  z-index: 200000;
+}
+
+.hero-content button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #1317f8;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* ================= SECTION ================= */
+
+.section{
+  padding:100px 20px;
+  text-align:center;
+  background:#111;
+}
+
+.section h2{
+  margin-bottom:40px;
+  font-size:40px;
+}
+
+.cards{
+  display:flex;
+  gap:40px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:300px;
+  padding:40px;
+  border-radius:25px;
+  transition:0.4s;
+  box-shadow:0 0 20px rgba(0,255,255,0.1);
+  background:linear-gradient(#00c6ff,#0072ff);
+  animation:gradientMove 12s ease infinite;
+}
+
+.card:hover{
+  transform:translateY(-15px);
+  box-shadow:0 0 40px rgba(0,255,255,0.5);
+}
+  
+
+/* ================= FOOTER ================= */
+
+footer{
+  text-align:center;
+  padding:40px;
+  background:black;
+}
+
+
+</style>
+<script>
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("active");
+}
+
+function toggleAccount(e) {
+  e.stopPropagation(); // ne zárja be a menüt
+  document.getElementById("accountMenu").classList.toggle("open");
+}
+
+// kattintás kívül = bezár
+document.addEventListener("click", function() {
+  document.getElementById("accountMenu").classList.remove("open");
+});
+</script>

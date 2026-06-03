@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<title>Tisztaforrás - Kapcsolataink</title>
+<body>
+   <header>
+      <nav>
+
+ <ul class="nav-menu" id="nav-menu">
+    <li><a href="index.html">Főoldal</a></li>
+
+    <!-- MEGA DROPDOWN -->
+    <li class="dropdown">
+      <a href="termek.html">Termékek</a>
+
+      <div class="mega-dropdown">
+        <div class="column">
+          <h3>Ásvány vizeink</h3>
+          <ul>
+            <li><a href="Szénsavmentes.html">Szénsavmentes</a></li>
+            <li><a href="Szénsavmentes.html">Szénsavas</a></li>
+            <li><a href="404_page.html">Lúgos</a></li>
+            <li><a href="404_page.html">Ízesített</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Edzés felszerelés</h3>
+          <ul>
+            <li><a href="Kulacs.html">Kulacs</a></li>
+            <li><a href="404_page.html">Póló</a></li>
+            <li><a href="404_page.html">Nadrág</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Szezonális</h3>
+          <ul>
+            <li><a href="404_page.html">Mangós víz</a></li>
+            <li><a href="404_page.html">Maracuja víz</a></li>
+            <li><a href="404_page.html">Rövidnadrág</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="Kapcsolataink.html">Kapcsolataink</a></li>
+
+    <!-- FIÓK -->
+    <li class="dropdown right">
+      <button class="dropbtn">Fiók</button>
+      <div class="dropdown-content">
+        <a href="Bejelentkezes.html">Bejelentkezés</a>
+        <a href="Regisztracio.html">Regisztráció</a>
+        <a href="Fiok.html">Fiók állapota</a>
+      </div>
+    </li>
+  </ul>
+    <!-- LOGÓ -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+</nav>
+<section class="contact-hero">
+    <h1>📞 Kapcsolataink</h1>
+    <p>Kérdésed van? Csapatunk készséggel segít.</p>
+</section>
+
+<section class="stats">
+    <div class="stat-card">
+        <h2>24/7</h2>
+        <p>Ügyfélszolgálat</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>10.000+</h2>
+        <p>Elégedett vásárló</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>99%</h2>
+        <p>Pozitív értékelés</p>
+    </div>
+</section>
+
+<section class="contact-table-section">
+
+    <h2>Elérhetőségeink</h2>
+
+    <table class="contact-table">
+        <tr>
+            <th>Típus</th>
+            <th>Adat</th>
+        </tr>
+
+        <tr>
+            <td>📧 Email</td>
+            <td>supporttisztaforras.hu@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>📞 Telefon</td>
+            <td>+36 30 123 4567</td>
+        </tr>
+
+        <tr>
+            <td>📍 Cím</td>
+            <td>Debrecen, Magyarország</td>
+        </tr>
+
+        <tr>
+            <td>🕒 Nyitvatartás</td>
+            <td>0-24</td>
+        </tr>
+    </table>
+
+</section>
+
+<div class="trust-banner">
+    💧 Több mint 10.000 elégedett vásárló választotta már a Tiszta Forrást
+</div>
+
+<section class="contact-form-section">
+
+    <h2>✉️ Küldj üzenetet</h2>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Név">
+
+        <input type="email" placeholder="Email">
+
+        <textarea placeholder="Üzenet"></textarea>
+
+        <button type="submit">Üzenet küldése</button>
+
+    </form>
+
+    
+
+</section>
+
+<footer>
+  © 2026 Tiszta Forrás | A tiszta döntés
+</footer>
+</body>
+</html>
+    <style>
+        body{
+    background:#1290ff;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.contact-hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.contact-hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-bottom:60px;
+}
+
+.stat-card{
+    background:#071428;
+    padding:30px;
+    width:220px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h2{
+    color:#00e5ff;
+    font-size:40px;
+}
+
+.contact-table-section{
+    padding:40px;
+}
+
+.contact-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#071428;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.contact-table th{
+    background:#1c4cff;
+}
+
+.contact-table th,
+.contact-table td{
+    padding:20px;
+    text-align:left;
+}
+
+.contact-table tr:nth-child(even){
+    background:#0b1d39;
+}
+
+.contact-form-section{
+    padding:60px 40px;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+.contact-form textarea{     
+    height:180px;
+}
+
+.contact-form button{
+    background:#1c4cff;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.contact-form button:hover{
+    background:#335fff;
+}
+
+.trust-banner{
+    background:#071428;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+    animation:pulse 2s infinite;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+

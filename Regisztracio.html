@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tisztaforrás Regisztráció</title>
+<link rel="stylesheet" href="style.css">
+<body>
+   <header>
+      <nav>
+<ul class="nav-menu" id="nav-menu">
+    <li><a href="index.html">Főoldal</a></li>
+
+    <!-- MEGA DROPDOWN -->
+    <li class="dropdown">
+      <a href="termek.html">Termékek</a>
+
+      <div class="mega-dropdown">
+        <div class="column">
+          <h3>Ásvány vizeink</h3>
+          <ul>
+            <li><a href="Szénsavmentes.html">Szénsavmentes</a></li>
+            <li><a href="Szénsavmentes.html">Szénsavas</a></li>
+            <li><a href="404_page.html">Lúgos</a></li>
+            <li><a href="404_page.html">Ízesített</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Edzés felszerelés</h3>
+          <ul>
+            <li><a href="Kulacs.html">Kulacs</a></li>
+            <li><a href="404_page.html">Póló</a></li>
+            <li><a href="404_page.html">Nadrág</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Szezonális</h3>
+          <ul>
+            <li><a href="404_page.html">Mangós víz</a></li>
+            <li><a href="404_page.html">Maracuja víz</a></li>
+            <li><a href="404_page.html">Rövidnadrág</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="Kapcsolataink.html">Kapcsolataink</a></li>
+
+    <!-- FIÓK -->
+    <li class="dropdown right">
+      <button class="dropbtn">Fiók</button>
+      <div class="dropdown-content">
+        <a href="Bejelentkezes.html">Bejelentkezés</a>
+        <a href="Regisztracio.html">Regisztráció</a>
+        <a href="Fiok.html">Fiók állapota</a>
+      </div>
+    </li>
+  </ul>
+    <!-- LOGÓ -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+</nav>
+      </nav>
+    </header>
+    <section class="register-section">
+
+<div class="register-box">
+
+<h2 class="register-title">Regisztráció</h2>
+
+<div class="input-group">
+<input type="text" placeholder="Felhasználónév">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="Email cím">
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Jelszó">
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Jelszó megerősítése">
+</div>
+
+<button class="register-btn">🚀 Regisztráció</button>
+
+<p class="login-link">
+Van már fiókod? <a href="Bejelentkezes.html">Bejelentkezés</a>
+</p>
+
+</div>
+
+</section>
+<footer>
+  © 2026 Tiszta Forrás | A tiszta döntés
+</footer>
+
+</body>
+<style>
+/* REGISTER PAGE */
+
+.register-section{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh; 
+background:#070b12;
+position:relative;
+overflow:hidden;
+}
+
+/* víz animáció */
+
+.register-section::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background:radial-gradient(circle,#00c3ff33,#000);
+animation:waterMove 10s linear infinite;
+z-index:0;
+}
+
+@keyframes waterMove{
+0%{transform:translate(-10%,-10%)}
+50%{transform:translate(-20%,-20%)}
+100%{transform:translate(-10%,-10%)}
+}
+
+.register-box{
+  z-index: 1000;
+position:relative;
+z-index:2;
+background:#0f1724;
+padding:40px;
+border-radius:15px;
+width:350px;
+box-shadow:0 0 30px rgba(0,195,255,0.25);
+}
+
+.register-title{
+text-align:center;
+color:#00c3ff;
+margin-bottom:25px;
+text-shadow:0 0 10px #00c3ff;
+}
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#111c2e;
+color:white;
+outline:none;
+transition:0.3s;
+}
+
+.input-group input:focus{
+box-shadow:0 0 10px #00c3ff;
+}
+
+.register-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#00c3ff;
+color:black;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.register-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #00c3ff;
+}
+
+.login-link{
+text-align:center;
+margin-top:15px;
+color: white;
+}
+
+.login-link a{
+color:#00c3ff;
+text-decoration:none;
+}
+footer{
+  text-align:center;
+  padding:40px;
+  background:black;
+  color: white;
+
+  bottom:0;
+  width:100%;
+}
+
+</style>
